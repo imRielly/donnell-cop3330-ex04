@@ -54,15 +54,12 @@ public class App
 
         String a;
         var firstChar = String.valueOf(prompt.charAt(0));
-        //System.out.println("FirstChar = " + firstChar);
 
         if(vowelsList.contains(firstChar)) {
             a = "an " + prompt;
         } else {
             a = "a " + prompt;
         }
-
-        //System.out.println(vowelsList);
 
         var output = String.format("Enter %s: ", a);
         System.out.print(output);
