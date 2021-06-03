@@ -44,7 +44,7 @@ public class App
     private static String requestInput(String prompt) {
         Scanner in = new Scanner(System.in);
 
-        List<String> vowelsList = new ArrayList<String>(5);
+        List<String> vowelsList = new ArrayList<>(5);
 
         vowelsList.add("a");
         vowelsList.add("e");
@@ -66,7 +66,6 @@ public class App
 
         var output = String.format("Enter %s: ", a);
         System.out.print(output);
-        var input = in.nextLine();
-        return input;
+        return in.nextLine();
     }
 }
